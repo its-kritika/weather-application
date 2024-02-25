@@ -1,11 +1,14 @@
 const request = require('request')
 
+//to provide security for my various api keys
+require('dotenv').config()
+
 const geocode = (( address, callback ) => {
-    const url = 'https://api.opencagedata.com/geocode/v1/json?q='+address+'&key=cba2b2e49f144b88a357137b737a0568&limit=1'
+    const url = 'https://api.opencagedata.com/geocode/v1/json?q='+address+'&key='+process.env.API_KEY_GEOCODE+'&limit=1'
 
     request( {url , json: true}, (error, { body } = {}) => {
         if (error){
-            callback('Unable to connect to location services!', undefined)
+            callback('Unable to connect to location services! Check your Wifi Connection!🛜', undefined)
         }else if( body.results.length === 0 ){
             callback('Unable to find location!😞 Try searching another!!', undefined)
         }else{
