@@ -1,0 +1,103 @@
+h1, h3{
+    color: rgb(57, 56, 56);
+}
+body{
+    width: 60%;
+    margin: 0 auto;
+    background-image: url('../img/weather-back1.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+div{
+    flex-grow: 1;
+}
+div a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 17px;
+}
+input{
+    width: 40vw;
+    height: 7vh;
+    margin: 0 5% 2% 5%;
+    font-size: 17px;
+    text-indent: 10px;
+    outline: none;
+    border: none;
+    background-color: rgb(228, 225, 225);
+}
+button{
+    height: 7vh;
+    width: 7rem;
+    cursor: pointer;
+    background-color: rgb(29, 167, 33);
+    border: none;
+    color: white;
+    font-size: 17px;
+}
+button:hover{
+    background-color: rgb(17, 134, 21);
+}
+header{
+    padding: 6% 4%;
+}
+div p{
+    padding-left: 6%;
+}
+footer{
+    padding: 2% 0 7% 4%;
+    border-top: 1px solid rgba(159, 159, 159, 0.81);
+}
+div p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#message-1{
+    margin-bottom: 0;
+    color: rgb(126, 19, 19);   
+}
+#message-2{
+    margin-top: 10px;
+    color: rgb(13, 104, 13);
+}
+div a:active{
+    color: #551a8b
+}
+.example{
+    margin-top: 2.5rem;
+}
+.result{
+    margin-top: 4rem;
+    color: rgb(126, 19, 19);   
+}
+.help-search::first-line{
+    color: rgb(13, 104, 13);
+}
+span{
+    color: rgb(126, 19, 19); 
+}
+@media screen and (max-width: 865px){
+    body{
+        width: 80%;
+    }
+    input{
+        width: 50vw;
+    }
+}
+@media screen and (max-width: 450px){
+    body{
+        width: 85%;
+    }
+    div a{
+        font-size: 1rem;
+    }
+    input{
+        width: 70vw;
+    }
+    button{
+        margin: 5%;
+    }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = 'icon' href="/img/weather.png">
+    <link rel = 'stylesheet' href = '/css/style.css'>
+    <script src = '/js/script.js'></script>
+</head>
+<body>
+    <div>
+        <header>
+            {{>header}}
+        </header>
+        <p>{{message}}</p>
+        <p class="help-search">Didn't find your search? 😞<br>Here's a tip: <span>Search more specifically!</span></p>
+        <p class = 'example'>For ex:</p>
+        <p class="help-search">To search for boston located in England try searching: <br>
+        <span>Boston, UK</span> instead of Boston</p>
+        <p class="result">See Results!🥳</p>
+    </div>
+    <footer>
+        {{>footer}}
+    </footer>
+</body>
+</html>

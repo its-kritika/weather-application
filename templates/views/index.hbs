@@ -1,0 +1,37 @@
+{{!-- we can see that content of this file is same as that of index.html file
+we are learning handlebars not as a replacement of html but together with html files
+we can use handlebars to create dynamic and more complex web pages, which is static using html, i.e, 
+we know that html pages are static but if we want some dynamic aspects in our document we can use handlebars instead of html --}}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = 'icon' href="/img/weather.png">
+    <link rel = 'stylesheet' href = '/css/style.css'>
+    
+</head>
+<body>
+    
+    <div>
+        {{!-- accessing dynamic content --}}
+        <header>
+            {{>header}}
+       </header>
+       <p>Enter location to search:</p>
+        <form>
+            <input placeholder="Location">
+            <button>Search</button>
+        </form>
+
+        <p id = 'message-1'></p>
+        <p id = 'message-2'></p>
+    </div>
+    <footer>
+        {{>footer}}
+    </footer>
+
+    <script src = '/js/script.js'></script>
+</body>
+</html>
